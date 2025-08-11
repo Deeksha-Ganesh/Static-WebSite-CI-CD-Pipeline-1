@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME = "deekshaganesh/my-static-site"
         EC2_USER = "ubuntu" // use 'ec2-user' if it's Amazon Linux
         EC2_HOST = "13.233.167.149" // your EC2 public IP
-        PEM_KEY_PATH = "/var/lib/jenkins/my-ec2-key.pem" // updated PEM key path
+        PEM_KEY_PATH = "/var/lib/jenkins/JenkinsServerPem.pem" // updated PEM key path
     }
     stages {
         stage('Clone Repository') {
