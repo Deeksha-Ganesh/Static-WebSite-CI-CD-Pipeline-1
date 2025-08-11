@@ -1,13 +1,13 @@
-Static Website CI/CD Pipeline
+##Static Website CI/CD Pipeline
 
 This project demonstrates a CI/CD pipeline that automates the deployment of a static website. Whenever changes are pushed to GitHub, Jenkins builds a Docker image, pushes it to Docker Hub, and deploys the container on an AWS EC2 instance.
 
-Architecture
+##Architecture
 
 Developer → GitHub → Jenkins (CI) → Docker Hub → AWS EC2 (CD)
 
 
-Tools Used
+##Tools Used
 AWS EC2 (Ubuntu instance for Jenkins & Amazon Linux for deployment)
 
 GitHub (to store website code)
@@ -18,7 +18,7 @@ Docker (containerization)
 
 Docker Hub (image registry)
 
-Project Overview
+##Project Overview
 
 A static website built with HTML/CSS stored in GitHub.
 
@@ -28,7 +28,7 @@ Jenkins pipeline automates building, pushing Docker images, and deploying to AWS
 
 The deployed app is accessible via the public IP of the EC2 instance.
 
-Prerequisites
+##Prerequisites
 
 AWS account with EC2 instances launched (Ubuntu for Jenkins, Amazon Linux for deployment)
 
@@ -38,7 +38,7 @@ Jenkins installed on EC2 with Docker configured
 
 GitHub repository containing the static website and Jenkinsfile
 
-Setup Instructions
+##Setup Instructions
 1. Prepare Jenkins Server (Ubuntu EC2)
 2. Install Docker on Jenkins Server
 3. Create GitHub Repository and upload your code
