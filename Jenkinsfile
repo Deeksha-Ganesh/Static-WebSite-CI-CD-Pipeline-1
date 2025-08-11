@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/Deeksha-Ganesh/Static-WebSite-CI-CD-Pipeline-1.git'
+                        git branch: 'main', url: 'https://github.com/Deeksha-Ganesh/Static-WebSite-CI-CD-Pipeline-1.git'
             }
         }
         stage('Build Docker Image') {
