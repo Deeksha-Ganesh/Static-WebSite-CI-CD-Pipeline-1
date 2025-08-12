@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_USER = "deekshaganesh"
-        DOCKER_HUB_PASS = "Deeksha@18"
-        IMAGE_NAME = "deekshaganesh/my-static-site"
-        EC2_USER = "ubuntu" // use 'ec2-user' if it's Amazon Linux
-        EC2_HOST = "13.233.167.149" // your EC2 public IP
-        PEM_KEY_PATH = "/var/lib/jenkins/JenkinsServerPem.pem" // updated PEM key path
+        DOCKER_HUB_USER = "DockerHubUserName"
+        DOCKER_HUB_PASS = "DockerHubPassword"
+        IMAGE_NAME = "DockerHubUserName/Image_Name"
+        EC2_USER = "ec2-user" // use 'ec2-user' if it's Amazon Linux
+        EC2_HOST = "Public Ip" // your EC2 public IP
+        PEM_KEY_PATH = "Path of Pem Key"
     }
     stages {
         stage('Clone Repository') {
